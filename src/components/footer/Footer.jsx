@@ -14,7 +14,7 @@ const Footer = () => {
           </li>
           <li className="footer__link">
             {" "}
-            <a href="#projects" className="footer__link">
+            <a href="#portfolio" className="footer__link">
               Projects
             </a>
           </li>
@@ -25,7 +25,7 @@ const Footer = () => {
           </li>
         </ul>
         <div className="footer__social">
-          <a href="" className="footer__social-link" target="_blank">
+          <a href="#home" className="footer__social-link" target="_blank">
             <i class="bx bxl-instagram"></i>
           </a>
           <a
