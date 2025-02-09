@@ -17,7 +17,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
-          GQ
+          <i class="bx bx-code-alt"></i>
         </a>
         <div className={Toggle ? "nav__menu show-menu " : "nav__menu"}>
           <ul className="nav__list grid">
@@ -29,10 +29,9 @@ const Header = () => {
                   activeNav === "#home" ? "nav__link active-link" : "nav__link"
                 }
               >
-                <i className="uil uil-estate nav__icon"></i>Home
+                <i className="uil uil-user nav__icon"></i>Inicio
               </a>
             </li>
-
             <li className="nav__item">
               <a
                 href="#about"
@@ -41,7 +40,7 @@ const Header = () => {
                   activeNav === "#about" ? "nav__link active-link" : "nav__link"
                 }
               >
-                <i className="uil uil-user nav__icon"></i>About
+                <i className="uil uil-user nav__icon"></i>Sobre Mí
               </a>
             </li>
 
@@ -55,7 +54,7 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-file-alt nav__icon"></i>Skills
+                <i className="uil uil-file-alt nav__icon"></i>Habilidades
               </a>
             </li>
 
@@ -69,7 +68,7 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-scenery nav__icon"></i>Portfolio
+                <i className="uil uil-scenery nav__icon"></i>Proyectos
               </a>
             </li>
 
@@ -83,7 +82,7 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-message nav__icon"></i>Contact
+                <i className="uil uil-message nav__icon"></i>Contacto
               </a>
             </li>
           </ul>

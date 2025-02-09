@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  font-size: var(--normal-font-size);
   position: fixed;
   top: 0;
   left: 0;
@@ -16,6 +17,7 @@
 
 .nav__logo,
 .nav__toggle {
+  font-size: 1.5rem;
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -35,8 +37,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: var(--normal-font-size);
-  color: var(--title-color);
+  font-size: 1.2rem;
+  color: white;
   font-weight: var(--font-medium);
   transition: 0.3s;
 }
@@ -44,7 +46,10 @@
 /* Active Link */
 .active-link,
 .nav__link:hover {
-  color: var(--title-color-dark);
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px rgb(51, 120, 255),
+    0 0 30px rgb(51, 120, 255), 0 0 40px rgb(51, 120, 255),
+    0 0 50px rgb(51, 120, 255);
 }
 
 /* Change background header */

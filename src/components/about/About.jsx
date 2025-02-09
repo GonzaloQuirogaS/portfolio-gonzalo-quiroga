@@ -1,26 +1,38 @@
 import React from "react";
 import "./about.css";
-import AboutImg from "../../assets/about.jpg";
+import AboutImg from "../../assets/profile1.jpg";
 import CV from "../../assets/John-Cv.pdf";
 import Info from "./Info";
 
 const About = () => {
   return (
     <section className="about section" id="about">
-      <h2 className="section__title">About Me</h2>
-      <span className="section__subtitle">My introduction</span>
+      <h2 className="section__title">Sobre Mi</h2>
+      <span className="section__subtitle">Breve descripcion de mi persona</span>
 
       <div className="about__container container grid">
         <img src={AboutImg} alt="" className="about__img" />
         <div className="about__data">
-          <Info />
+          {/* <Info /> */}
           <p className="about__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            perspiciatis quia veritatis minima dignissimos quaerat deleniti
-            pariatur asperiores ea obcaecati!
+            ¡Hola! 👋
+            <br />
+            Me llamo
+            <strong> Gonzalo Quiroga</strong>, tengo 23 años y soy de
+            <strong> San Juan, Argentina.</strong>
+            <br />
+            <br />
+            Terminé mis estudios como
+            <strong> Técnico Universitario en Programacién</strong> y me
+            especialicé en el stack
+            <strong> Java Spring </strong>y<strong> JavaScript React.</strong>
+            <br />
+            <br />
+            Actualmente soy <strong>desarrollador FullStack </strong>y cuento
+            con mas de <strong>2 años de experienca.</strong>
           </p>
           <a download="" href={CV} className="button button--flex">
-            Download CV
+            Ver CV
             <svg
               class="button__icon"
               xmlns="http://www.w3.org/2000/svg"

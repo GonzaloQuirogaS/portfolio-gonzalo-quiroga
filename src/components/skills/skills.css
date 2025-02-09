@@ -5,10 +5,24 @@
 }
 
 .skills__content {
-  background: var(--container-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--container-color);
+  background-image: linear-gradient(
+    180deg,
+    rgba(25, 28, 52, 1) 0%,
+    rgba(9, 14, 24, 1) 80%
+  );
+  background-size: 0;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+
+  border: 1px solid #00b0c1; /* some kind of blue border */
+  box-shadow: 0px 0px 4px #00b0c1; /* some variation of blue for the shadow */
   padding: 2rem 4rem;
   border-radius: 1.25rem;
+}
+
+.skills__content:hover {
+  background-size: 100%;
 }
 
 .skills__title {
@@ -38,52 +52,52 @@
 
 .skills .bxl-bootstrap {
   font-size: 1rem;
-  color: var(--title-color);
+  color: var(--title-color-dark);
 }
 
 .skills .bxl-javascript {
   font-size: 1rem;
-  color: var(--title-color);
+  color: var(--title-color-dark);
 }
 
 .skills .bxl-java {
   font-size: 1rem;
-  color: var(--title-color);
+  color: var(--title-color-dark);
 }
 
 .skills .bxl-spring-boot {
   font-size: 1rem;
-  color: var(--title-color);
+  color: var(--title-color-dark);
 }
 
 .skills .bxl-react {
   font-size: 1rem;
-  color: var(--title-color);
+  color: var(--title-color-dark);
 }
 
 .skills .bxs-data {
   font-size: 1rem;
-  color: var(--title-color);
+  color: var(--title-color-dark);
 }
 
 .skills .bxl-postgresql {
   font-size: 1rem;
-  color: var(--title-color);
+  color: var(--title-color-dark);
 }
 
 .skills .bxl-tailwind-css {
   font-size: 1rem;
-  color: var(--title-color);
+  color: var(--title-color-dark);
 }
 
 .skills .bxl-css3 {
   font-size: 1rem;
-  color: var(--title-color);
+  color: var(--title-color-dark);
 }
 
 .skills .bxl-sass {
   font-size: 1rem;
-  color: var(--title-color);
+  color: var(--title-color-dark);
 }
 
 .skills__name {

@@ -44,8 +44,6 @@ const Footer = () => {
             <i class="bx bxl-github"></i>
           </a>
         </div>
-
-        <span className="footer__copy">&#169; Gonzalo Quiroga</span>
       </div>
     </footer>
   );
