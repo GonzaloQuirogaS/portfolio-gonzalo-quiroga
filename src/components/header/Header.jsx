@@ -17,7 +17,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
-          <i class="bx bx-code-alt"></i>
+          <i className="bx bx-code-alt"></i>
         </a>
         <div className={Toggle ? "nav__menu show-menu " : "nav__menu"}>
           <ul className="nav__list grid">

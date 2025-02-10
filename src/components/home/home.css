@@ -44,7 +44,7 @@
   left: 12px;
   width: 3px;
   height: 8rem;
-  background: rgb(0, 217, 255);
+  background: #00d9ff;
   border-radius: 5px;
 }
 
@@ -58,8 +58,7 @@
   transform: translateY(-0.35rem);
   color: #ffffff;
   text-shadow: 0 0 10px #ffffff, 0 0 20px rgb(51, 120, 255),
-    0 0 30px rgb(51, 120, 255), 0 0 40px rgb(51, 120, 255),
-    0 0 50px rgb(51, 120, 255);
+    0 0 30px rgb(51, 120, 255), 0 0 40px #3378ff, 0 0 50px rgb(51, 120, 255);
 }
 
 .home__title {

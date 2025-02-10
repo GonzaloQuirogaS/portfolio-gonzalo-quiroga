@@ -88,7 +88,14 @@ body {
 }
 
 strong {
-  color: #fef08a;
+  color: #00d9ff;
+  transition: 0.3s;
+}
+
+strong:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px rgb(51, 120, 255),
+    0 0 30px rgb(51, 120, 255), 0 0 40px #3378ff, 0 0 50px rgb(51, 120, 255);
 }
 
 h1,
