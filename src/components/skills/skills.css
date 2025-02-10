@@ -1,137 +1,547 @@
 .skills__container {
-  grid-template-columns: repeat(2, 350px);
-  column-gap: 3rem;
-  justify-content: center;
-}
-
-.skills__content {
-  background-color: var(--container-color);
-  background-image: linear-gradient(
-    180deg,
-    rgba(25, 28, 52, 1) 0%,
-    rgba(9, 14, 24, 1) 80%
-  );
-  background-size: 0;
-  background-repeat: no-repeat;
-  transition: 0.3s;
-
-  border: 1px solid #00b0c1; /* some kind of blue border */
-  box-shadow: 0px 0px 4px #00b0c1; /* some variation of blue for the shadow */
-  padding: 2rem 4rem;
-  border-radius: 1.25rem;
-}
-
-.skills__content:hover {
-  background-size: 100%;
-}
-
-.skills__title {
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-semi-bold);
-  text-align: center;
-  margin-bottom: var(--mb-2);
-}
-
-.skills__box {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 1220px;
+  align-items: center;
   justify-content: center;
-  column-gap: 2.5rem;
+  gap: 2rem;
 }
 
-.skills__group {
-  display: grid;
-  align-items: flex-start;
-  row-gap: 1rem;
-}
-
-.skills__data {
+.skill__content.html {
+  position: relative;
   display: flex;
-  column-gap: 0.5rem;
-  margin-bottom: 0.5rem;
+  width: 170px;
+  height: 170px;
+  background-color: #080d1f;
+  border-radius: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  overflow: hidden;
 }
 
-.skills .bxl-bootstrap {
-  font-size: 1rem;
-  color: var(--title-color-dark);
+.skill__content.html::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-image: conic-gradient(#e44d26 20deg, transparent 120deg);
+  animation: rotar 4s linear infinite;
 }
 
-.skills .bxl-javascript {
-  font-size: 1rem;
-  color: var(--title-color-dark);
+.skill__content.html::after {
+  content: "";
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  border-radius: 2rem;
+  background-color: #080d1f;
 }
 
-.skills .bxl-java {
-  font-size: 1rem;
-  color: var(--title-color-dark);
+.skill__content.css {
+  position: relative;
+  display: flex;
+  width: 170px;
+  height: 170px;
+  background-color: #080d1f;
+  border-radius: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  overflow: hidden;
 }
 
-.skills .bxl-spring-boot {
-  font-size: 1rem;
-  color: var(--title-color-dark);
+.skill__content.css::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: conic-gradient(#33aadd 20deg, transparent 120deg);
+  animation: rotar 4s linear infinite;
 }
 
-.skills .bxl-react {
-  font-size: 1rem;
-  color: var(--title-color-dark);
+.skill__content.css::after {
+  content: "";
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  border-radius: 2rem;
+  background-color: #080d1f;
 }
 
-.skills .bxs-data {
-  font-size: 1rem;
-  color: var(--title-color-dark);
+.skill__content.js {
+  position: relative;
+  display: flex;
+  width: 170px;
+  height: 170px;
+  background-color: #080d1f;
+  border-radius: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  overflow: hidden;
 }
 
-.skills .bxl-postgresql {
-  font-size: 1rem;
-  color: var(--title-color-dark);
+.skill__content.js::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: conic-gradient(#f7df1e 20deg, transparent 120deg);
+  animation: rotar 4s linear infinite;
 }
 
-.skills .bxl-tailwind-css {
-  font-size: 1rem;
-  color: var(--title-color-dark);
+.skill__content.js::after {
+  content: "";
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  border-radius: 2rem;
+  background-color: #080d1f;
 }
 
-.skills .bxl-css3 {
-  font-size: 1rem;
-  color: var(--title-color-dark);
+.skill__content.react {
+  position: relative;
+  display: flex;
+  width: 170px;
+  height: 170px;
+  background-color: #080d1f;
+  border-radius: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  overflow: hidden;
 }
 
-.skills .bxl-sass {
-  font-size: 1rem;
-  color: var(--title-color-dark);
+.skill__content.react::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: conic-gradient(#00d8ff 20deg, transparent 120deg);
+  animation: rotar 4s linear infinite;
 }
 
-.skills__name {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-  line-height: 18px;
+.skill__content.react::after {
+  content: "";
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  border-radius: 2rem;
+  background-color: #080d1f;
+}
+
+.skill__content.java {
+  position: relative;
+  display: flex;
+  width: 170px;
+  height: 170px;
+  background-color: #080d1f;
+  border-radius: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  overflow: hidden;
+}
+
+.skill__content.java::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: conic-gradient(#e76f00 20deg, transparent 120deg);
+  animation: rotar 4s linear infinite;
+}
+
+.skill__content.java::after {
+  content: "";
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  border-radius: 2rem;
+  background-color: #080d1f;
+}
+
+.skill__content.spring {
+  position: relative;
+  display: flex;
+  width: 170px;
+  height: 170px;
+  background-color: #080d1f;
+  border-radius: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  overflow: hidden;
+}
+
+.skill__content.spring::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: conic-gradient(#70ad51 20deg, transparent 120deg);
+  animation: rotar 4s linear infinite;
+}
+
+.skill__content.spring::after {
+  content: "";
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  border-radius: 2rem;
+  background-color: #080d1f;
+}
+.skill__content.mysql {
+  position: relative;
+  display: flex;
+  width: 170px;
+  height: 170px;
+  background-color: #080d1f;
+  border-radius: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  overflow: hidden;
+}
+
+.skill__content.mysql::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: conic-gradient(#00758f 20deg, transparent 120deg);
+  animation: rotar 4s linear infinite;
+}
+
+.skill__content.mysql::after {
+  content: "";
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  border-radius: 2rem;
+  background-color: #080d1f;
+}
+
+.skill__content.sql {
+  position: relative;
+  display: flex;
+  width: 170px;
+  height: 170px;
+  background-color: #080d1f;
+  border-radius: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  overflow: hidden;
+}
+
+.skill__content.sql::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: conic-gradient(#ffda44 20deg, transparent 120deg);
+  animation: rotar 4s linear infinite;
+}
+
+.skill__content.sql::after {
+  content: "";
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  border-radius: 2rem;
+  background-color: #080d1f;
+}
+
+.skill__content.postgre {
+  position: relative;
+  display: flex;
+  width: 170px;
+  height: 170px;
+  background-color: #080d1f;
+  border-radius: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  overflow: hidden;
+}
+
+.skill__content.postgre::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: conic-gradient(#336791 20deg, transparent 120deg);
+  animation: rotar 4s linear infinite;
+}
+
+.skill__content.postgre::after {
+  content: "";
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  border-radius: 2rem;
+  background-color: #080d1f;
+}
+
+.skill__content.mongo {
+  position: relative;
+  display: flex;
+  width: 170px;
+  height: 170px;
+  background-color: #080d1f;
+  border-radius: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  overflow: hidden;
+}
+
+.skill__content.mongo::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: conic-gradient(#70ad51 20deg, transparent 120deg);
+  animation: rotar 4s linear infinite;
+}
+
+.skill__content.mongo::after {
+  content: "";
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  border-radius: 2rem;
+  background-color: #080d1f;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+/* .skill__content span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, transparent, #17f3fd);
+  animation: animate_one 2s linear infinite;
+}
+@keyframes animate_one {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skill__content span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(to bottom, transparent, #17f3fd);
+  animation: animate_two 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate_two {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.skill__content span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left, transparent, #17f3fd);
+  animation: animate_three 2s linear infinite;
+}
+@keyframes animate_three {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.skill__content span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(to top, transparent, #17f3fd);
+  animation: animate_four 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate_four {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+} */
+
+.skill__content p {
+  z-index: 3;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-top: 1rem;
+}
+
+.skill__content img {
+  z-index: 3;
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For large devices */
-@media screen and (max-width: 992px) {
-  .skills__container {
-    grid-template-columns: max-content;
-    row-gap: 2rem;
-  }
-}
-
 @media screen and (max-width: 576px) {
+  .skill__content.html {
+    width: 130px;
+    height: 130px;
+  }
+
+  .skill__content.html::after {
+    width: 125px;
+    height: 125px;
+  }
+
+  .skill__content.css {
+    width: 130px;
+    height: 130px;
+  }
+
+  .skill__content.css::after {
+    width: 125px;
+    height: 125px;
+  }
+
+  .skill__content.js {
+    width: 130px;
+    height: 130px;
+  }
+
+  .skill__content.js::after {
+    width: 125px;
+    height: 125px;
+  }
+
+  .skill__content.react {
+    width: 130px;
+    height: 130px;
+  }
+
+  .skill__content.react::after {
+    width: 125px;
+    height: 125px;
+  }
+
+  .skill__content.java {
+    width: 130px;
+    height: 130px;
+  }
+
+  .skill__content.java::after {
+    width: 125px;
+    height: 125px;
+  }
+
+  .skill__content.spring {
+    width: 130px;
+    height: 130px;
+  }
+
+  .skill__content.spring::after {
+    width: 125px;
+    height: 125px;
+  }
+
+  .skill__content.mysql {
+    width: 130px;
+    height: 130px;
+  }
+
+  .skill__content.mysql::after {
+    width: 125px;
+    height: 125px;
+  }
+
+  .skill__content.sql {
+    width: 130px;
+    height: 130px;
+  }
+
+  .skill__content.sql::after {
+    width: 125px;
+    height: 125px;
+  }
+
+  .skill__content.postgre {
+    width: 130px;
+    height: 130px;
+  }
+
+  .skill__content.postgre::after {
+    width: 125px;
+    height: 125px;
+  }
+
+  .skill__content.mongo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .skill__content.mongo::after {
+    width: 125px;
+    height: 125px;
+  }
+
   .skills__container {
-    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
-  .skills__content {
-    padding: 1.5rem;
-  }
-}
-
-/* For small devices */
-@media screen and (max-width: 350px) {
-  .skills__box {
-    column-gap: 1.25rem;
+  .skill__content p {
+    font-size: 1rem;
+    padding-top: 1rem;
   }
 
-  .skills__name {
-    font-size: var(--small-font-size);
+  .skill__content img {
+    width: 50px;
+    height: 50px;
   }
 }

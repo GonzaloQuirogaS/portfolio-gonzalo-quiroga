@@ -1,20 +1,14 @@
 import React from "react";
 import "./skills.css";
-import Frontend from "./Frontend";
-import Backend from "./Backend";
+import Stack from "./Stack";
 
 const Skills = () => {
   return (
     <section className="skills section" id="skills">
       <h2 className="section__title">Tecnologias</h2>
-      <span className="section__subtitle">
-        En mi viaje por el mundo del desarrollo web, he cultivado experiencia y
-        habilidades <br></br> en una variedad de tecnologias.
-        <strong> Mi stack tecnologico incluye:</strong>
-      </span>
+      <span className="section__subtitle">Mi stack tecnológico incluye</span>
       <div className="skills__container container grid">
-        <Frontend />
-        <Backend />
+        <Stack />
       </div>
     </section>
   );
