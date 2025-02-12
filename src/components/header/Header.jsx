@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <nav className="nav container">
+      <nav className="nav ">
         <a href="index.html" className="nav__logo">
           <i className="bx bx-code-alt"></i>
         </a>

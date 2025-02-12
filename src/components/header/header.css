@@ -1,4 +1,7 @@
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   font-size: var(--normal-font-size);
   position: fixed;
@@ -8,11 +11,13 @@
   background-color: var(--body-color);
 }
 .nav {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  width: 1220px;
   height: calc(var(--header-height) + 1.5rem);
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  column-gap: 1rem;
+  justify-content: space-between;
 }
 
 .nav__logo,
@@ -119,6 +124,12 @@
   .nav__close,
   .nav__toggle {
     display: block;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .nav__link {
+    font-size: 0.9rem;
   }
 }
 
