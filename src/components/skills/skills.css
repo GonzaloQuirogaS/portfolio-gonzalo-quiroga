@@ -10,8 +10,8 @@
 .skill__content.html {
   position: relative;
   display: flex;
-  width: 170px;
-  height: 170px;
+  width: 130px;
+  height: 130px;
   background-color: #080d1f;
   border-radius: 2rem;
   flex-direction: column;
@@ -33,8 +33,8 @@
 .skill__content.html::after {
   content: "";
   position: absolute;
-  width: 165px;
-  height: 165px;
+  width: 125px;
+  height: 125px;
   border-radius: 2rem;
   background-color: #080d1f;
 }
@@ -42,8 +42,8 @@
 .skill__content.css {
   position: relative;
   display: flex;
-  width: 170px;
-  height: 170px;
+  width: 130px;
+  height: 130px;
   background-color: #080d1f;
   border-radius: 2rem;
   flex-direction: column;
@@ -66,8 +66,8 @@
 .skill__content.css::after {
   content: "";
   position: absolute;
-  width: 165px;
-  height: 165px;
+  width: 125px;
+  height: 125px;
   border-radius: 2rem;
   background-color: #080d1f;
 }
@@ -75,8 +75,8 @@
 .skill__content.js {
   position: relative;
   display: flex;
-  width: 170px;
-  height: 170px;
+  width: 130px;
+  height: 130px;
   background-color: #080d1f;
   border-radius: 2rem;
   flex-direction: column;
@@ -98,8 +98,8 @@
 .skill__content.js::after {
   content: "";
   position: absolute;
-  width: 165px;
-  height: 165px;
+  width: 125px;
+  height: 125px;
   border-radius: 2rem;
   background-color: #080d1f;
 }
@@ -107,8 +107,8 @@
 .skill__content.react {
   position: relative;
   display: flex;
-  width: 170px;
-  height: 170px;
+  width: 130px;
+  height: 130px;
   background-color: #080d1f;
   border-radius: 2rem;
   flex-direction: column;
@@ -130,8 +130,8 @@
 .skill__content.react::after {
   content: "";
   position: absolute;
-  width: 165px;
-  height: 165px;
+  width: 125px;
+  height: 125px;
   border-radius: 2rem;
   background-color: #080d1f;
 }
@@ -139,8 +139,8 @@
 .skill__content.java {
   position: relative;
   display: flex;
-  width: 170px;
-  height: 170px;
+  width: 130px;
+  height: 130px;
   background-color: #080d1f;
   border-radius: 2rem;
   flex-direction: column;
@@ -163,8 +163,8 @@
 .skill__content.java::after {
   content: "";
   position: absolute;
-  width: 165px;
-  height: 165px;
+  width: 125px;
+  height: 125px;
   border-radius: 2rem;
   background-color: #080d1f;
 }
@@ -172,8 +172,8 @@
 .skill__content.spring {
   position: relative;
   display: flex;
-  width: 170px;
-  height: 170px;
+  width: 130px;
+  height: 130px;
   background-color: #080d1f;
   border-radius: 2rem;
   flex-direction: column;
@@ -196,16 +196,16 @@
 .skill__content.spring::after {
   content: "";
   position: absolute;
-  width: 165px;
-  height: 165px;
+  width: 125px;
+  height: 125px;
   border-radius: 2rem;
   background-color: #080d1f;
 }
 .skill__content.mysql {
   position: relative;
   display: flex;
-  width: 170px;
-  height: 170px;
+  width: 130px;
+  height: 130px;
   background-color: #080d1f;
   border-radius: 2rem;
   flex-direction: column;
@@ -228,8 +228,8 @@
 .skill__content.mysql::after {
   content: "";
   position: absolute;
-  width: 165px;
-  height: 165px;
+  width: 125px;
+  height: 125px;
   border-radius: 2rem;
   background-color: #080d1f;
 }
@@ -237,8 +237,8 @@
 .skill__content.sql {
   position: relative;
   display: flex;
-  width: 170px;
-  height: 170px;
+  width: 130px;
+  height: 130px;
   background-color: #080d1f;
   border-radius: 2rem;
   flex-direction: column;
@@ -261,8 +261,8 @@
 .skill__content.sql::after {
   content: "";
   position: absolute;
-  width: 165px;
-  height: 165px;
+  width: 125px;
+  height: 125px;
   border-radius: 2rem;
   background-color: #080d1f;
 }
@@ -270,8 +270,8 @@
 .skill__content.postgre {
   position: relative;
   display: flex;
-  width: 170px;
-  height: 170px;
+  width: 130px;
+  height: 130px;
   background-color: #080d1f;
   border-radius: 2rem;
   flex-direction: column;
@@ -294,8 +294,8 @@
 .skill__content.postgre::after {
   content: "";
   position: absolute;
-  width: 165px;
-  height: 165px;
+  width: 125px;
+  height: 125px;
   border-radius: 2rem;
   background-color: #080d1f;
 }
@@ -303,8 +303,8 @@
 .skill__content.mongo {
   position: relative;
   display: flex;
-  width: 170px;
-  height: 170px;
+  width: 130px;
+  height: 130px;
   background-color: #080d1f;
   border-radius: 2rem;
   flex-direction: column;
@@ -326,8 +326,8 @@
 .skill__content.mongo::after {
   content: "";
   position: absolute;
-  width: 165px;
-  height: 165px;
+  width: 125px;
+  height: 125px;
   border-radius: 2rem;
   background-color: #080d1f;
 }
@@ -417,15 +417,15 @@
 .skill__content p {
   z-index: 3;
   background-color: transparent;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 
 .skill__content img {
   z-index: 3;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   background-color: transparent;
 }
 
