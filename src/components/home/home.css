@@ -212,8 +212,7 @@
   }
 
   .home__scroll {
-    margin-top: 5rem;
-    align-items: center;
+    display: none;
   }
 }
 
