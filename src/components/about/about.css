@@ -7,7 +7,7 @@
 .about__container {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  column-gap: 4rem;
+  column-gap: 4 rem;
 }
 
 .section__title {
@@ -25,22 +25,22 @@
 
 .section__subtitle {
   display: block;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
 }
 
 .about__img {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 }
 
 .btn__about {
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: flex;
   width: fit-content;
   background-color: #00d9ff;
   color: #000000;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
   transition: 0.3s;
@@ -56,11 +56,12 @@
 .about__box {
   background-color: rgb(8, 13, 31);
   border-radius: 0.75rem;
-  padding: 2rem 6rem;
+  padding: 2rem 4rem;
+  margin: 0 3rem 0 3rem;
 }
 
 .about__description {
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0 4rem 0 0;
   margin-bottom: var(--mb-2-5);
 }
