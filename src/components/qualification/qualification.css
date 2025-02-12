@@ -81,6 +81,10 @@
   margin-bottom: 0.5rem;
 }
 
+.qualification__description {
+  margin: 0 0 1rem 0;
+}
+
 .qualification__calendar {
   color: #d6d6dc;
   font-size: 1.1rem;
