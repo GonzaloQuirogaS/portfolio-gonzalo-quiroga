@@ -21,8 +21,6 @@ const Contact = () => {
 
       <div className="contact__container container grid">
         <div className="contact__content">
-          <h3 className="contact__title"></h3>
-
           <div className="contact__info">
             <div className="contact__card">
               <i className="bx bx-mail-send contact__card-icon"></i>
@@ -48,14 +46,17 @@ const Contact = () => {
                 linkedin.com/in/gonzalo-quiroga7
               </span>
 
-              <a
-                href="https://www.linkedin.com/in/gonzalo-quiroga7/"
-                className="contact__button"
-                target="_blank"
-              >
-                Ir
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-              </a>
+              <div className="btn">
+                <a
+                  href="https://www.linkedin.com/in/gonzalo-quiroga7/"
+                  className="contact__button"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Ir
+                  <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
             </div>
 
             <div className="contact__card">
@@ -70,6 +71,7 @@ const Contact = () => {
                 href="https://github.com/GonzaloQuirogaS"
                 className="contact__button"
                 target="_blank"
+                rel="noreferrer"
               >
                 Ir
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -83,45 +85,48 @@ const Contact = () => {
 
           <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
-              <label className="contact__form-tag">Nombre</label>
               <input
                 type="text"
                 name="name"
                 className="contact__form-input"
-                placeholder="Ingrese su nombre"
+                placeholder="Nombre"
+                autoComplete="off"
               />
             </div>
 
             <div className="contact__form-div">
-              <label className="contact__form-tag">Email</label>
               <input
                 type="email"
                 name="email"
                 className="contact__form-input"
-                placeholder="Ingrese su email"
+                autoComplete="off"
+                placeholder="Email"
               />
             </div>
 
             <div className="contact__form-div contact__form-area">
-              <label className="contact__form-tag">Mensaje</label>
               <textarea
                 name="project"
                 cols="30"
                 rows="10"
+                autoComplete="off"
                 className="contact__form-input"
                 placeholder="Escribeme tu idea"
               ></textarea>
             </div>
 
             <button
-              onClick={() =>
+              onClick={() => {
                 Swal.fire({
-                  title: "Good job!",
-                  text: "You clicked the button!",
                   icon: "success",
-                })
-              }
-              className="button button--flex"
+                  title: "Enviado",
+                  showConfirmButton: false,
+                  background: "#080d1f",
+                  timer: 1000,
+                  color: "#fff",
+                });
+              }}
+              className="button__contact button--flex"
             >
               Enviar
               <svg
