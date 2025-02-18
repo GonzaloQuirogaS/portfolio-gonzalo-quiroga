@@ -1,7 +1,6 @@
 import Work1 from "../../assets/work1.jpg";
 import Work2 from "../../assets/work2.jpg";
 import Work3 from "../../assets/work3.jpg";
-import Work4 from "../../assets/work4.jpg";
 
 export const projectsData = [
   {
@@ -30,13 +29,5 @@ export const projectsData = [
       "API RESTful para gestion de operaciones de concesionaria de autos.",
     technologies: ["Java", "Spring Boot", "MySQL"],
     link: "https://github.com/GonzaloQuirogaS/car-dealership",
-  },
-  {
-    id: 4,
-    image: Work4,
-    title: "App movil",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies.",
-    technologies: ["Java", "Spring Boot", "Spring Cloud", "Gateway", "MySQL"],
   },
 ];
