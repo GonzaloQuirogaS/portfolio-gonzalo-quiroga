@@ -40,7 +40,7 @@ const Contact = () => {
             </div>
 
             <div className="contact__card">
-              <i class="bx bxl-linkedin-square contact__card-icon"></i>
+              <i className="bx bxl-linkedin-square contact__card-icon"></i>
               <h3 className="contact__card-title">LinkedIn</h3>
               <span className="contact__card-data">
                 linkedin.com/in/gonzalo-quiroga7
@@ -91,46 +91,84 @@ const Contact = () => {
                 className="contact__form-input"
                 placeholder="Nombre"
                 autoComplete="off"
+                required
               />
             </div>
 
             <div className="contact__form-div">
               <input
+                id="email"
                 type="email"
                 name="email"
                 className="contact__form-input"
                 autoComplete="off"
                 placeholder="Email"
+                required
               />
             </div>
 
             <div className="contact__form-div contact__form-area">
               <textarea
                 name="project"
+                id="project"
                 cols="30"
                 rows="10"
                 autoComplete="off"
                 className="contact__form-input"
                 placeholder="Escribeme tu idea"
+                required
               ></textarea>
             </div>
 
             <button
               onClick={() => {
-                Swal.fire({
-                  icon: "success",
-                  title: "Enviado",
-                  showConfirmButton: false,
-                  background: "#080d1f",
-                  timer: 1000,
-                  color: "#fff",
-                });
+                const input = document.querySelector(".contact__form-input");
+                const email = document.getElementById("email");
+                const project = document.getElementById("project");
+                const emailRegex =
+                  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+                let isValid = true;
+
+                if (
+                  input.value === "" ||
+                  input.value === null ||
+                  project.value === "" ||
+                  project.value === null ||
+                  !emailRegex.test(email.value) ||
+                  email.value === "" ||
+                  email.value === null
+                ) {
+                  Swal.fire({
+                    icon: "error",
+                    title: "Error",
+                    text: "Por favor, verifique los campos",
+                    showConfirmButton: false,
+                    background: "#080d1f",
+                    timer: 2000,
+                    color: "#fff",
+                    width: "18rem",
+                  });
+                  isValid = false;
+                }
+                if (isValid) {
+                  Swal.fire({
+                    icon: "success",
+                    title: "Enviado",
+                    showConfirmButton: false,
+                    background: "#080d1f",
+                    width: "18rem",
+
+                    timer: 1000,
+                    color: "#fff",
+                  });
+                }
               }}
               className="button__contact button--flex"
             >
               Enviar
               <svg
-                class="button__icon"
+                className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
