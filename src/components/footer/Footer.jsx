@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__container container">
         <h1 className="footer__title">Gonzalo Quiroga</h1>
-        <ul className="footer__list">
+        {/* <ul className="footer__list">
           <li className="footer__link">
             <a href="#about" className="footer__link">
               About
@@ -23,15 +23,21 @@ const Footer = () => {
               Skills
             </a>
           </li>
-        </ul>
+        </ul> */}
         <div className="footer__social">
-          <a href="#home" className="footer__social-link" target="_blank">
-            <i class="bx bxl-instagram"></i>
+          <a
+            href="https://wa.me/+542644745354"
+            className="footer__social-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="bx bxl-whatsapp"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/gonzalo-quiroga7/"
             className="footer__social-link"
             target="_blank"
+            rel="noreferrer"
           >
             <i class="bx bxl-linkedin-square"></i>
           </a>
@@ -40,6 +46,7 @@ const Footer = () => {
             href="https://github.com/GonzaloQuirogaS"
             className="footer__social-link"
             target="_blank"
+            rel="noreferrer"
           >
             <i class="bx bxl-github"></i>
           </a>

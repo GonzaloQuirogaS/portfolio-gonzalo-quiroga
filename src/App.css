@@ -1,6 +1,16 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 6px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00d9ff;
+  border-radius: 100px;
+}
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
@@ -212,7 +222,15 @@ img {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 410px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #00d9ff;
+    border-radius: 100px;
+  }
 }
 
 /* For small devices */
