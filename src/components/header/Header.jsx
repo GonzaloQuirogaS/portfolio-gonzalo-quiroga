@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav ">
-        <a href="index.html" className="nav__logo">
+        <a href="#home" className="nav__logo">
           <i className="bx bx-code-alt"></i>
         </a>
         <div className={Toggle ? "nav__menu show-menu " : "nav__menu"}>
