@@ -29,6 +29,8 @@
 
 .work__img {
   border-radius: 1rem;
+  width: max-content;
+  object-fit: cover; /* Ajusta la imagen para cubrir el área sin estirar */
   margin-bottom: var(--mb-1);
 }
 

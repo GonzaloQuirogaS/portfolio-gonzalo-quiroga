@@ -1,12 +1,12 @@
-import Work1 from "../../assets/work1.jpg";
-import Work2 from "../../assets/work2.jpg";
-import Work3 from "../../assets/work3.jpg";
+import Work1 from "../../assets/gym.png";
+import Work2 from "../../assets/library.png";
+import Work3 from "../../assets/car.png";
 
 export const projectsData = [
   {
     id: 1,
     image: Work1,
-    title: "Gym-app",
+    title: "API Gimnasio",
     description:
       "API RESTful para gestion de gimnasio basada en arquitectura de microservicios.",
     technologies: ["Java", "Spring Boot", "Spring Cloud", "MySQL"],
@@ -15,7 +15,7 @@ export const projectsData = [
   {
     id: 2,
     image: Work2,
-    title: "Library-app",
+    title: "API Ecommerce Libreria",
     description:
       "API RESTful para gestion de operaciones de ecommerce de libros.",
     technologies: ["Java", "Spring Boot", "MySQL", "JWT"],
@@ -24,7 +24,7 @@ export const projectsData = [
   {
     id: 3,
     image: Work3,
-    title: "Concesionaria de autos",
+    title: "API Concesionaria",
     description:
       "API RESTful para gestion de operaciones de concesionaria de autos.",
     technologies: ["Java", "Spring Boot", "MySQL"],
