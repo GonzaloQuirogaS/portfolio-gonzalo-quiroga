@@ -1,6 +1,5 @@
 import React from "react";
 import "./about.css";
-import CV from "../../assets/John-Cv.pdf";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const About = () => {
@@ -37,7 +36,12 @@ const About = () => {
               Actualmente soy <strong>desarrollador FullStack </strong>y cuento
               con mas de <strong>2 años de experiencia.</strong>
             </p>
-            <a download="" href={CV} className="btn__about button--flex">
+            <a
+              href="https://drive.google.com/file/d/1s1vhjfbVf8-0ZWr5unFv2wrSq9oj0iXL/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              className="btn__about button--flex"
+            >
               Ver CV
               <svg
                 className="button__icon"

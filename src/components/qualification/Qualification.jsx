@@ -9,7 +9,7 @@ const Qualification = () => {
   };
 
   return (
-    <section className="qualification section">
+    <section className="qualification section" id="qualification">
       <h2 className="section__title">Experiencia</h2>
       <span className="section__subtitle">Mi camino</span>
 
@@ -152,9 +152,7 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div className="qualification__data__info">
-                <h3 className="qualification__title">
-                  Backend Developer Internship
-                </h3>
+                <h3 className="qualification__title">Backend Developer</h3>
                 <span className="qualification__subtitle">InkuA</span>
                 <p className="qualification__description">
                   Trabajé en el desarrollo <strong>backend</strong> del campus
