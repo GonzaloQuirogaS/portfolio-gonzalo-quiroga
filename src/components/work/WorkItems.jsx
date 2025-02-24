@@ -7,7 +7,7 @@ const WorkItems = ({ item }) => {
         <img src={item.image} className="work__img" alt="" />
         <h3 className="work__title">{item.title}</h3>
         <p>{item.description}</p>
-        <ul className="work__technologies">
+        {/* <ul className="work__technologies">
           {item.technologies.map((technology, index) => {
             return (
               <li className="work__technology" key={index}>
@@ -15,7 +15,7 @@ const WorkItems = ({ item }) => {
               </li>
             );
           })}
-        </ul>
+        </ul> */}
         <a
           href={item.link}
           target="_blank"
